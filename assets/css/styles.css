@@ -3,6 +3,7 @@
     --black: #000;
     --bgColor: #F5F1E9;
     --mainColor: #2A323F;
+    --secondColor: #BABEC6;
     --featuredColor: #E25054;
     --featuredColorHover: #C04347;
 }
@@ -409,6 +410,67 @@ h2 {font-weight: 700;}
 #historia {
     width: 100%;
     color: var(--white);
-    padding: 5rem 0;
+    margin-top: 7rem;
+    padding: 14rem 0 5rem;
     background-color: var(--mainColor);
+}
+
+#conheca-historia {position: relative;}
+    #conheca-historia .ilustracao {
+        width: 426px;
+        height: 400px;
+        top: -23rem;
+        right: 0;
+        position: absolute;
+        background: url(../images/ilustracao-dog.png) no-repeat 0 0 transparent;
+    }
+    .historia-sp-trading {width: 100%; display: flex;}
+    .historia-sp-trading::before {
+        content: ' ';
+        height: 1px;
+        width: 98%;
+        display: block;
+        top: 80px;
+        left: 2%;
+        z-index: 1;
+        position: absolute;
+        background: linear-gradient(to right,  #383e49 0%,#6f7e96 100%);
+    }
+    .historia-sp-trading .info {
+        color: var(--secondColor);
+        width: 26%;
+        padding-right: 4rem;
+        position: relative;
+    }
+        .historia-sp-trading .info:nth-child(2) {width: 32%;}
+        .historia-sp-trading .info:nth-child(3) {width: 42%;}
+        .historia-sp-trading .info:last-child {padding-right: 0;}
+        .historia-sp-trading .info::before {
+            content: ' ';
+            width: 20px;
+            height: 20px;
+            display: block;
+            border-radius: 250px;
+            margin-bottom: 1rem;
+            z-index: 2;
+            position: relative;
+            background-color: var(--featuredColor);
+        }
+        .historia-sp-trading .ano {
+            color: var(--featuredColor);
+            font-size: 1.6rem;
+            font-weight: 750;
+            margin-bottom: 2rem;
+            display: inline-block;
+            border-bottom: solid 2px var(--featuredColor);
+        }
+    
+@media screen and (max-width: 991px) {   
+    .historia-sp-trading .info {padding-right: 2rem;} 
+}
+@media screen and (max-width: 768px) {    
+    .historia-sp-trading {flex-direction: column;}
+    .historia-sp-trading::before, .historia-sp-trading .info::before {display: none;}
+    .historia-sp-trading .info, .historia-sp-trading .info:nth-child(2), .historia-sp-trading .info:nth-child(3) {width: 100%; padding: 0;}
+    .historia-sp-trading .info {margin: 1rem 0;}
 }
