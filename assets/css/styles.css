@@ -474,3 +474,28 @@ h2 {font-weight: 700;}
     .historia-sp-trading .info, .historia-sp-trading .info:nth-child(2), .historia-sp-trading .info:nth-child(3) {width: 100%; padding: 0;}
     .historia-sp-trading .info {margin: 1rem 0;}
 }
+
+#banner-pet {
+    color: var(--white);
+    width: 100%;
+    height: 636px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+    #banner-pet h2 {font-size: 4rem; max-width: 670px; text-align: center;}
+    #banner-pet.bp1 {background-image: url(../images/banner-pet1.png);}
+    #banner-pet.bp2 {background-image: url(../images/banner-pet2.png);}
+    #banner-pet.bp3 {background-image: url(../images/banner-pet3.png);}
+
+#footer {
+    color: var(--white);
+    width: 100%;
+    padding: 2rem 0;
+    background-color: var(--mainColor);
+}
+    #footer .copyright {text-align: right; padding-top: 1rem;}
+    
+@media screen and (max-width: 768px) {#footer, #footer .copyright {text-align: center;}}
