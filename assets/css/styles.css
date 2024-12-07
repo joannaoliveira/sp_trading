@@ -209,7 +209,7 @@ sub {bottom: -0.25em;}
 
 h2 {font-weight: 700;}
 
-.btn-ver-todos {text-align: right;}
+.btn-ver-todos.left {text-align: right;}
 .btn-ver-todos a {
     color: var(--featuredColor);
     font-size: 0.8rem;
@@ -240,7 +240,7 @@ h2 {font-weight: 700;}
         .chamada-produto .img img {vertical-align: middle;}
         
 @media screen and (max-width: 576px) {
-    .btn-ver-todos {text-align: left;}
+    .btn-ver-todos.left {text-align: left;}
 }
     
 #header {
@@ -404,4 +404,11 @@ h2 {font-weight: 700;}
     #banner-chamada-produtos h1 {font-size: 2.6rem;}
     #banner-chamada-quem-somos {flex-direction: column;}
     #banner-chamada-quem-somos .video {margin-top: 2rem;}
+}
+
+#historia {
+    width: 100%;
+    color: var(--white);
+    padding: 5rem 0;
+    background-color: var(--mainColor);
 }
