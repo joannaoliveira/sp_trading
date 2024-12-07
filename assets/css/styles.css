@@ -1,6 +1,7 @@
 :root {
     --white: #FFF;
     --black: #000;
+    --bgColor: #F5F1E9;
     --mainColor: #2A323F;
     --featuredColor: #E25054;
     --featuredColorHover: #C04347;
@@ -191,7 +192,7 @@ img, picture, video, embed {max-width: 100%;}
 body {
 	color: var(--mainColor);
     font-family: 'Avenir LT Std';
-	background-color: var(--white);
+	background-color: var(--bgColor);
 }
 
 a {color: var(--mainColor); text-decoration: none;}
@@ -202,9 +203,46 @@ small {font-size: 0.7em;}
 sub, sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
 sup {top: -0.5em;}
 sub {bottom: -0.25em;}
+.text-right {text-align: right;}
 
 .img-button {cursor: pointer; background:none repeat scroll 0 0 transparent; border:medium none; padding:0; vertical-align:middle;}
 
+h2 {font-weight: 700;}
+
+.btn-ver-todos {text-align: right;}
+.btn-ver-todos a {
+    color: var(--featuredColor);
+    font-size: 0.8rem;
+    display: inline-block;
+    padding-bottom: 0.1rem;
+    border-bottom: solid 1px var(--featuredColor);
+}
+    .btn-ver-todos a:hover {
+        color: var(--featuredColorHover);
+        border-bottom-color: var(--featuredColorHover);
+    }
+    .btn-ver-todos a img {
+        margin-left: 0.2rem;
+        vertical-align: middle;
+    }
+
+.chamada-produto {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem 0;
+    border: solid 1px rgba(42, 50, 63, 0.18);
+}
+    .chamada-produto .img {
+        height: 18rem;
+        line-height: 18rem;
+        text-align: center;
+    }
+        .chamada-produto .img img {vertical-align: middle;}
+        
+@media screen and (max-width: 576px) {
+    .btn-ver-todos {text-align: left;}
+}
+    
 #header {
     padding: 2rem;
     background-color: var(--mainColor);
