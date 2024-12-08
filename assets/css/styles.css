@@ -475,6 +475,60 @@ h2 {font-weight: 700;}
     .historia-sp-trading .info {margin: 1rem 0;}
 }
 
+#contato {
+    padding: 5rem 0;
+    background-color: var(--bgColor);
+}
+    #contato form label {
+        color: var(--featuredColor);
+        font-size: 0.8rem;
+        display: block;
+        z-index: 2;
+        position: relative;
+        margin: 1.4rem 0 -10px 2rem;
+    }
+        #contato form div:first-child label {margin-top: 0;}
+        #contato form label span {
+            font-weight: 700;
+            padding: 0 0.2rem;
+            display: inline-block;
+            background-color: var(--bgColor);
+        }
+        #contato form label.error, #contato form div:first-child label.error {
+            color: var(--featuredColorHover);
+            font-weight: 700;
+            margin: 0.5rem 0 1rem 2rem;
+        }
+    #contato form input, 
+    #contato form textarea {
+        color: var(--mainColor);
+        width: 100%;
+        border-radius: 4px;
+        padding: 1rem 2rem;
+        display: block;
+        z-index: 1;
+        position: relative;
+        background-color: var(--bgColor);
+        border: solid 1px rgba(91, 102, 121, 0.84);
+    }
+    #contato form textarea {height: 207px;}
+    #contato .btn-acao {margin-top: 1rem;}
+        #contato .btn-acao button {
+            color: var(--white);
+            max-width: 200px;
+            width: 100%;
+            padding: 0.7rem 1.2rem;
+            border-radius: 4px;
+            display: inline-block;
+            border: solid 1px var(--featuredColor);
+            background-color: var(--featuredColor);
+        }
+            #contato .btn-acao button:hover {background-color: var(--featuredColorHover);}
+            #contato .btn-acao button img {
+                margin-left: 2rem;
+                vertical-align: middle;
+            }
+
 #banner-pet {
     color: var(--white);
     width: 100%;

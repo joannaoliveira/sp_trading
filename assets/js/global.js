@@ -24,33 +24,24 @@ $( document ).ready(function() {
     };    
     $('.phone').mask(behavior, options);
 
-    $(".solicitar-analise").on( "click", function() {
-        $("#frmCotacao").get(0).scrollIntoView({behavior: 'smooth'});
-        return false;
-    });
-
-    $("#frmCotacao").validate({
+    $("#frmContato").validate({
         rules: {
             iNome: "required",
-            iSobrenome: "required",
             iEmail: {
                 required: true,
                 email: true
             },
-            iWhatsapp: "required",            
-            iTpDivida: "required",            
-            iValor: "required"
+            iTelefone: "required",            
+            tMsg: "required"
         },
         messages: {
             iNome: "Campo obrigatório",
-            iSobrenome: "Campo obrigatório",
             iEmail: {
                 required: "Campo obrigatório",
                 email: "Digite um e-mail válido"
             },
-            iWhatsapp: "Campo obrigatório",
-            iTpDivida: "Campo obrigatório",
-            iValor: "Campo obrigatório"
+            iTelefone: "Campo obrigatório",
+            tMsg: "Campo obrigatório"
         }
     });
 
