@@ -487,7 +487,7 @@ h2 {font-weight: 700;}
     background: url(../images/bg-logisticas.png) no-repeat right 0 var(--featuredColor);
 }
     #nossa-logistica .desc {max-width: 500px; padding: 0 0 0 5rem;}
-        #nossa-logistica .desc h2 {font-size: 1.4rem;}
+        #nossa-logistica .desc h2 {font-size: 1.4rem; margin-bottom: 1rem;}
     #nossa-logistica .img {
         width: 600px;
         height: 268px;
