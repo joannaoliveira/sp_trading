@@ -196,6 +196,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+    .responsive-produto .slick-dots li button:before {color: #2A323F;}
 .slick-dots li.slick-active button:before
 {
     color: #E25054;
