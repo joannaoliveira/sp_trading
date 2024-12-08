@@ -2,6 +2,7 @@
     --white: #FFF;
     --black: #000;
     --bgColor: #F5F1E9;
+    --bgColor2: #1b202a;
     --mainColor: #2A323F;
     --secondColor: #BABEC6;
     --featuredColor: #E25054;
@@ -411,8 +412,8 @@ h2 {font-weight: 700;}
     width: 100%;
     color: var(--white);
     margin-top: 7rem;
-    padding: 14rem 0 500px;
-    background-color: var(--mainColor);
+    padding: 14rem 0 450px;
+    background-color: var(--bgColor2);
 }
 
 #conheca-historia {margin-bottom: 300px; position: relative;}
@@ -527,6 +528,40 @@ h2 {font-weight: 700;}
         }
             #depoimentos .btn-acao a:hover {background-color: rgba(0, 0, 0, 0.2);}
         #depoimentos .btn-acao img {margin-left: 0.7rem; vertical-align: middle;}
+
+#pilares-fundamentais {padding: 8rem 0 0;}
+    #pilares-fundamentais h2 {
+        font-size: 4rem;
+        max-width: 516px;
+        margin-bottom: 5rem;
+    }
+    #pilares-fundamentais .icone {text-align: right; margin-top: 4rem;}
+    #pilares-fundamentais .box-info {
+        margin: 0 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: solid 1px var(--mainColor);
+    }
+        #pilares-fundamentais .box-info .desc {padding: 0 5rem;}
+        #pilares-fundamentais .box-info h3 {
+            color: var(--featuredColor);
+            font-weight: 400;
+        }
+        
+@media screen and (max-width: 991px) {
+    #pilares-fundamentais h2 {font-size: 3rem;}
+    #pilares-fundamentais .icone {margin-top: 2rem;}
+    #pilares-fundamentais .box-info .desc {padding: 0 2rem;}
+    #pilares-fundamentais .box-info p {font-size: 0.9rem;}
+    #pilares-fundamentais .box-info img {max-width: 230px;}
+}
+@media screen and (max-width: 768px) {
+    #pilares-fundamentais h2 {font-size: 2rem;}
+    #pilares-fundamentais .icone {margin-top: 1rem;}
+    #pilares-fundamentais .box-info .desc {padding: 2rem;}
+    #pilares-fundamentais .box-info img {display: none;}
+}
 
 #nossos-valores {margin: -500px 0 4rem;}
     #nossos-valores .container {
