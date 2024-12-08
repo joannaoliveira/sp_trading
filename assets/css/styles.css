@@ -209,6 +209,10 @@ sub {bottom: -0.25em;}
 
 .img-button {cursor: pointer; background:none repeat scroll 0 0 transparent; border:medium none; padding:0; vertical-align:middle;}
 
+.breadcrumb {margin-bottom: 2rem;}
+.breadcrumb-item+.breadcrumb-item::before {content: url(../images/icone-breadcrumb.png);}
+.breadcrumb-item.active {color: var(--featuredColor); font-weight: 700;}
+
 h2 {font-weight: 700;}
 
 .btn-ver-todos.left {text-align: right;}
