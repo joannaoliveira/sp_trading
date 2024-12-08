@@ -482,7 +482,7 @@ h2 {font-weight: 700;}
     max-width: 1080px;
     display: flex;
     align-items: center;
-    margin: -280px auto 8rem;
+    margin: -280px auto 7rem;
     position: relative;
     background: url(../images/bg-logisticas.png) no-repeat right 0 var(--featuredColor);
 }
@@ -517,7 +517,7 @@ h2 {font-weight: 700;}
     padding: 4rem 0;
     background: url(../images/bg-depoimentos.png) no-repeat center 0 #1b202a;
 }
-    #depoimentos h2 {max-width: 365px;}
+    #depoimentos h2 {max-width: 365px; margin-bottom: 5rem;}
     #depoimentos .btn-acao {text-align: right; margin-top: 1rem;}
         #depoimentos .btn-acao a {
             color: var(--white);
@@ -528,6 +528,31 @@ h2 {font-weight: 700;}
         }
             #depoimentos .btn-acao a:hover {background-color: rgba(0, 0, 0, 0.2);}
         #depoimentos .btn-acao img {margin-left: 0.7rem; vertical-align: middle;}
+
+.depoimento {
+    width: 98%;
+    padding: 3rem;
+    border: solid 1px var(--mainColor);
+    background-color: var(--bgColor2);
+}
+    .depoimento .nome {
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+    .depoimento .site {
+        color: #6F7E96;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+@media screen and (max-width: 991px) {
+    #depoimentos h2 {margin-bottom: 1rem;}
+    #depoimentos .btn-acao {text-align: left; margin-bottom: 2rem;}
+}
+@media screen and (max-width: 600px) {
+    #depoimentos {padding-top: 2rem;}
+    #depoimentos .btn-acao a {padding: 0.5rem 1.8rem;}
+}
 
 #pilares-fundamentais {padding: 8rem 0 0;}
     #pilares-fundamentais h2 {
