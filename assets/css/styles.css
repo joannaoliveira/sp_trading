@@ -415,7 +415,7 @@ h2 {font-weight: 700;}
     background-color: var(--mainColor);
 }
 
-#conheca-historia {position: relative;}
+#conheca-historia {margin-bottom: 300px; position: relative;}
     #conheca-historia .ilustracao {
         width: 426px;
         height: 400px;
@@ -474,6 +474,59 @@ h2 {font-weight: 700;}
     .historia-sp-trading .info, .historia-sp-trading .info:nth-child(2), .historia-sp-trading .info:nth-child(3) {width: 100%; padding: 0;}
     .historia-sp-trading .info {margin: 1rem 0;}
 }
+
+#nossa-logistica {
+    width: 98%;
+    height: 277px;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    margin: -280px auto 8rem;
+    position: relative;
+    background: url(../images/bg-logisticas.png) no-repeat right 0 var(--featuredColor);
+}
+    #nossa-logistica .desc {max-width: 500px; padding: 0 0 0 5rem;}
+        #nossa-logistica .desc h2 {font-size: 1.4rem;}
+    #nossa-logistica .img {
+        width: 600px;
+        height: 268px;
+        right: -40px;
+        bottom: -35px;
+        position: absolute;
+        background: url(../images/img-caminhao.png) no-repeat 0 bottom transparent;
+        background-size: cover;
+    }
+    
+@media screen and (max-width: 1224px) {    
+    #nossa-logistica .img {width: 400px; height: 179px; right: -10px;}
+}
+@media screen and (max-width: 920px) {    
+    #nossa-logistica {height: auto; background-image: none;}
+    #nossa-logistica .desc {
+        max-width: 100%;
+        padding: 3rem;
+    }
+    #nossa-logistica .img {display: none;}
+}
+
+#depoimentos {
+    color: var(--white);
+    width: 100%;
+    min-height: 737px;
+    padding: 4rem 0;
+    background: url(../images/bg-depoimentos.png) no-repeat center 0 #1b202a;
+}
+    #depoimentos h2 {max-width: 365px;}
+    #depoimentos .btn-acao {text-align: right; margin-top: 1rem;}
+        #depoimentos .btn-acao a {
+            color: var(--white);
+            display: inline-block;
+            border-radius: 250px;
+            padding: 1rem 2.2rem;
+            border: solid 1px var(--white);
+        }
+            #depoimentos .btn-acao a:hover {background-color: rgba(0, 0, 0, 0.2);}
+        #depoimentos .btn-acao img {margin-left: 0.7rem; vertical-align: middle;}
 
 #nossos-valores {margin: -500px 0 4rem;}
     #nossos-valores .container {
