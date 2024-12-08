@@ -630,6 +630,16 @@ h2 {font-weight: 700;}
     padding: 8rem 0;
     background-color: var(--bgColor);
 }
+    #contato.pagina-interna {padding-top: 0;}
+    #contato.pagina-interna .contato-opcoes {position: relative;}
+    #contato.pagina-interna .contato-opcoes .img {
+        width: 222px;
+        height: 370px;
+        right: -100px;
+        bottom: 0;
+        position: absolute;
+        background: url(../images/bg-contato.png) no-repeat right bottom transparent;
+    }
     #contato h2 {
         font-size: 3rem;
         line-height: 1.1em;
@@ -688,8 +698,12 @@ h2 {font-weight: 700;}
                 vertical-align: middle;
             }
 
+@media screen and (max-width: 1200px) {
+    #contato.pagina-interna .contato-opcoes .img {right: -50px; bottom: -40px;}
+}
 @media screen and (max-width: 991px) {
     #contato h2 {font-size: 2.5rem;}
+    #contato.pagina-interna .contato-opcoes .img {display: none;}
 }
 
 #banner-pet {
@@ -716,3 +730,9 @@ h2 {font-weight: 700;}
     #footer .copyright {text-align: right; padding-top: 1rem;}
     
 @media screen and (max-width: 768px) {#footer, #footer .copyright {text-align: center;}}
+
+.titulo-produto {
+    font-size: 4rem;
+    font-weight: 700; 
+    margin-bottom: 2rem;
+}
