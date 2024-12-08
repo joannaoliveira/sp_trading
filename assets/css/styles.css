@@ -411,7 +411,7 @@ h2 {font-weight: 700;}
     width: 100%;
     color: var(--white);
     margin-top: 7rem;
-    padding: 14rem 0 5rem;
+    padding: 14rem 0 500px;
     background-color: var(--mainColor);
 }
 
@@ -475,8 +475,42 @@ h2 {font-weight: 700;}
     .historia-sp-trading .info {margin: 1rem 0;}
 }
 
+#nossos-valores {margin: -500px 0 4rem;}
+    #nossos-valores .container {
+        color: var(--white);
+        width: 1086px;
+        height: 650px;
+        background: url(../images/bg-valores.png) no-repeat 0 0 transparent;
+    }    
+    #nossos-valores h2 {
+        font-size: 2rem !important;
+        margin-top: 1.6rem !important;
+    }
+    #nossos-valores li {
+        max-width: 260px;
+        padding: 1rem 0;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.08);
+    }
+        #nossos-valores li:last-child {border-bottom: none;}
+        
+@media screen and (max-width: 991px) {
+    #nossos-valores .container {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        border-radius: 80px;
+        background-image: none;
+        background-color: var(--featuredColor);
+    }
+    #nossos-valores h2 {margin-top: 0 !important;}
+    #nossos-valores li {max-width: 100%;}
+}
+@media screen and (max-width: 596px) {
+    #nossos-valores .container {padding: 0rem; border-radius: 40px;}
+}
+
 #contato {
-    padding: 5rem 0;
+    padding: 8rem 0;
     background-color: var(--bgColor);
 }
     #contato h2 {
