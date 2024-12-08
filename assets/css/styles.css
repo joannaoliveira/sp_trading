@@ -537,6 +537,10 @@ h2 {font-weight: 700;}
                 vertical-align: middle;
             }
 
+@media screen and (max-width: 991px) {
+    #contato h2 {font-size: 2.5rem;}
+}
+
 #banner-pet {
     color: var(--white);
     width: 100%;
